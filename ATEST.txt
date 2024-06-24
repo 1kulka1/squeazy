@@ -1,0 +1,7 @@
+https://github.com/1kulka1/squeazy
+
+import numpy as np
+import pandas as pd
+data_set = pd.read_csv("C:/Users/Xyexx/Downloads/Telegram Desktop/2 intermediate attestation titanic.csv", sep = "\t")
+g = data_set.loc[data_set['Age'] >= 0]
+print(g[["Name"]].sort_values(["Name"], ascending=True))
